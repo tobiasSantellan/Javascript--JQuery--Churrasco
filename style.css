@@ -1,0 +1,350 @@
+body {
+  background-color: rgb(49, 44, 102);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-login {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: rgb(49, 44, 102);
+  color: #333;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.form-control-login {
+  border: 5px;
+  box-shadow: none; /* Quita cualquier sombra en el input */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.rounded-bottom {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.input-group-text {
+  background-color: #fff;
+  color: #333;
+  border: none;
+}
+
+footer {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.btn-custom {
+  background-color: rgb(59, 53, 119); /* tono ligeramente más oscuro */
+  border-color: rgb(59, 53, 119); /* mismo color para el borde */
+  color: rgba(230, 230, 230, 1);
+  font-size: 1.1rem; /* Tamaño de fuente más grande para el botón */
+  font-weight: 600;
+}
+
+.btn-custom:hover {
+  background-color: rgb(
+    59,
+    45,
+    119
+  ); /* Cambia ligeramente el color de fondo al hacer hover */
+  color: white !important; /* Mantiene el texto blanco al hacer hover */
+}
+
+.form-check {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center; /* Alinea horizontalmente */
+  gap: 5px; /* Espacio entre el checkbox y la etiqueta */
+}
+
+/* Ajusta el espaciado entre el checkbox y la etiqueta */
+.form-check-input {
+  margin: 0; /* Remueve cualquier margen extra alrededor del checkbox */
+}
+
+.form-check-label {
+  font-size: 0.7rem;
+  color: rgba(230, 230, 230, 1);
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/************************ PRODUCT ESTILOS  ********************************/
+
+.product-section {
+  background-color: #e9eaec;
+}
+
+/* Estilos del Navbar */
+.navbar {
+  background-color: rgb(49, 44, 102);
+  padding: 10px 20px;
+  box-shadow: 0 4px 12px rgba(25, 20, 70, 0.6);
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Distribuye uniformemente los elementos */
+.container-fluid.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Contenedor de la tarjeta */
+.card {
+  background-color: #fff;
+  border: 2px solid rgb(104, 97, 179);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 400px; /* Ajuste de altura mínima */
+  max-height: 400px; /* Ajuste de alturaamaxima */
+  width: 300px;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Movimiento hacia arriba */
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Título y descripción */
+.card-title {
+  color: #222;
+  font-size: 1.8rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #222;
+  font-size: 1rem;
+  font: bold;
+  margin: 10px 0;
+}
+
+/* Precio */
+.card-price {
+  color: rgb(49, 44, 102);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+  object-fit: contain;
+  height: 200px; /* Ajusta la altura para que no alargue la tarjeta */
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#load-more-btn {
+  background-color: #313d66; /* Color de fondo personalizado */
+  border: none; /* Sin borde */
+  color: #ffffff; /* Color de texto blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+#load-more-btn:hover {
+  background-color: #5962a8; /* Cambia el color de fondo al hacer hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa en hover */
+}
+
+/* AÑADIR PRODUCTO */
+
+/* Contenedor del formulario */
+.container {
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centrar el formulario en la pantalla */
+  flex-direction: column; /* Esto asegura que los elementos estén apilados en columna */
+  align-items: center; /* Centrar los elementos */
+}
+
+/* Encabezado */
+.container h2 {
+  text-align: center;
+  color: #313d66;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: bold;
+  color: #313d66;
+}
+
+/* Campos de entrada */
+.form-control {
+  border: 1px solid #c3c4e4;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #5962a8;
+  box-shadow: 0 0 5px rgba(49, 44, 102, 0.2);
+}
+
+/* Botón de envío */
+#product-form button[type="submit"] {
+  background-color: #313d66;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#product-form button[type="submit"]:hover {
+  background-color: #5962a8;
+}
+
+/* Sección de URLs de imágenes */
+#image-urls {
+  color: #313d66;
+  font-size: 14px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#uploaded-image {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  max-height: 100px; /* Limita la altura máxima */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Banner debajo del formulario */
+.status-banner {
+  background-color: rgb(49, 44, 102);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  width: 100%; /* Para que ocupe todo el ancho disponible */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Cambia la distribución a columnas */
+  .container-fluid.d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px; /* Espacio entre los elementos */
+  }
+
+  /* Reduce el tamaño de la imagen en pantallas pequeñas */
+  .navbar-logo {
+    height: 40px; /* Ajusta según el tamaño deseado */
+  }
+
+  /* Reduce el tamaño del título */
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+
+  /* Aumenta el ancho del botón para que sea más fácil de tocar en pantallas pequeñas */
+  .btn-success {
+    width: 100%;
+    max-width: 200px; /* Limita el ancho máximo */
+  }
+  .col-md-4 {
+    flex: 1 1 100%; /* Cada tarjeta ocupa el 100% en pantallas pequeñas */
+    max-width: 100%;
+  }
+
+  .card {
+    max-height: 450px;
+    margin-left: 2rem;
+  }
+
+  .card-img-top {
+    height: 150px; /* Reducción de la altura de la imagen */
+  }
+
+  /* Ajustar contenedor para pantallas más pequeñas */
+  .container {
+    padding: 20px;
+    width: 90%; /* Hacer que el contenedor ocupe el 90% del ancho de la pantalla */
+  }
+
+  /* Aumentar el tamaño de la fuente en móviles */
+  .container h2 {
+    font-size: 24px;
+  }
+
+  #product-form button[type="submit"] {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+
+  /* Reducir tamaño de fuentes en dispositivos muy pequeños */
+  .container h2 {
+    font-size: 22px;
+  }
+
+  .form-control {
+    padding: 8px;
+  }
+}
