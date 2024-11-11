@@ -3,7 +3,7 @@
 
 Este proyecto es un challenge desarrollado en HTML5 y JavaScript que puede ejecutarse en cualquier servidor web.
 
-## Cómo Probar el Proyecto
+## Cómo Probar el Proyecto 🚀
 
 ### Usando Live Server en Visual Studio Code
 
